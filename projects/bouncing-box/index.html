@@ -8,7 +8,8 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: #FFD700
+;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -91,12 +92,11 @@
 				positionX = 0;
 				points = points + 1;
 				changeBoxText(points);
-				speed = speed + 3;
-				if (speed >= 1){
-					speed + 3;
+				if (speed > 1){
+					speed = speed + 3;
 				}
-				else if(speed >= -1){
-					speed - 3;
+				else if(speed < 0){
+					speed = speed - 3;
 				}
 
 			};
